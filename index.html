@@ -194,8 +194,19 @@ body{
     background:#dc2626;
 }
 
-@media(max-width:768px){
+.footer{
+    position:fixed;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+    color:rgba(255,255,255,.8);
+    font-size:13px;
+    text-align:center;
+    letter-spacing:.3px;
+    z-index:100;
+}
 
+@media(max-width:768px){
     .card-wrapper{
         padding:25px;
     }
@@ -207,7 +218,10 @@ body{
     .class-card img{
         height:180px;
     }
-
+   .footer{
+        font-size:12px;
+        padding:0 10px;
+    }
 }
 
 </style>
@@ -262,6 +276,9 @@ body{
         </div>
     </div>
 </div>
+<footer class="footer">
+    © 2024 JNC Edukasi. All rights reserved.
+</footer>
 <script>
 const select = document.getElementById('kelasSelect');
 const result = document.getElementById('result');
